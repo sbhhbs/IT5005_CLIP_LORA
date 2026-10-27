@@ -53,8 +53,20 @@ It should report Python 3.12 and a path inside `.venv`. The notebooks select CUD
 
 **Caching and local runs**
 
+Pre-download the datasets before starting notebook work:
+
+```bash
+poetry run python download_datasets.py
+```
+
+This downloads only the 50,000-image ImageNet validation split (about 703 MB) and the 8,091 Flickr8k image–caption pairs (about 1.1 GB). Allow additional disk space for Flickr8k's prepared dataset cache. Rerunning the command reuses completed downloads. It does not download model weights or extract features.
+
+ImageNet's two Parquet shards are stored in `data/imagenet_validation/`; keep both files together. Part 1 reads them locally when both are present and otherwise streams from Hugging Face. Flickr8k uses Hugging Face's normal dataset cache, under `~/.cache/huggingface/` by default, which Part 2 reuses. Run the download command and notebooks with the same Hugging Face cache settings. The ImageNet download and remote fallback use the same pinned dataset revision. All downloaded data stays outside Git.
+
 | Location | Purpose |
 |---|---|
+| `data/imagenet_validation/` | Raw ImageNet validation data |
+| `~/.cache/huggingface/` (default) | Raw and prepared Flickr8k data |
 | `cache/imagenet_val_clip/` | Part 1 image features and labels |
 | `cache_part2/vision_pooled.pt` | Part 2 frozen image-encoder features |
 | `cache_part2/text_pooled.pt` | Part 2 frozen text-encoder features |
