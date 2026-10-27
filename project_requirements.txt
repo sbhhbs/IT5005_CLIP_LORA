@@ -1,0 +1,25 @@
+# IT5005 CLIP project (Parts 1 and 2) -- Python 3.12
+# Install with:  pip install -r requirements.txt
+
+# Deep learning
+torch>=2.4
+torchvision>=0.19          # used by the fast CLIP image processor in transformers
+transformers>=5.0,<6
+datasets>=3.0
+
+# Data, metrics and plotting
+numpy
+scikit-learn>=1.4
+matplotlib
+pillow
+requests
+tqdm
+tensorboard
+
+# Jupyter
+jupyter
+ipykernel
+ipywidgets                 # progress bars in notebooks
+
+# Optional (Part 2): compare the hand-written LoRA with Hugging Face PEFT
+peft

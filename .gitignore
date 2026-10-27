@@ -1,0 +1,43 @@
+# Local Python environments and generated files
+.venv/
+.conda/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Downloaded data, model features, and training artifacts
+/cache/
+/cache_part2/
+/.cache/
+/data/
+/datasets/
+/checkpoints/
+/runs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.arrow
+*.parquet
+
+# Recordings and temporary archives
+*.mp4
+*.mov
+*.mkv
+*.zip
+*.tar
+*.tar.gz
+*.log
+
+# Local settings and secrets
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

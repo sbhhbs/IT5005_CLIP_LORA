@@ -1,0 +1,25 @@
+[project]
+name = "it5005-clip-lora"
+version = "0.1.0"
+description = "IT5005 group project: CLIP classification and parameter-efficient image-text retrieval"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "torch>=2.4",
+    "torchvision>=0.19",
+    "transformers>=5.0,<6",
+    "datasets>=3.0",
+    "numpy",
+    "scikit-learn>=1.4",
+    "matplotlib",
+    "pillow",
+    "requests",
+    "tqdm",
+    "tensorboard",
+    "jupyter",
+    "ipykernel",
+    "ipywidgets",
+    "peft",
+]
+
+[tool.poetry]
+package-mode = false
