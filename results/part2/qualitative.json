@@ -1,0 +1,58 @@
+[
+  {
+    "label": "success",
+    "query_test_position": 1,
+    "query_dataset_row": 6535,
+    "caption": "A cyclist sits on some steps with his bike .",
+    "ground_truth_score": 0.2693365514278412,
+    "ground_truth_rank": 1,
+    "retrieved": [
+      {
+        "test_position": 1,
+        "dataset_row": 6535,
+        "score": 0.2693365514278412,
+        "caption": "A cyclist sits on some steps with his bike ."
+      },
+      {
+        "test_position": 66,
+        "dataset_row": 4636,
+        "score": 0.2553940713405609,
+        "caption": "Two bicycle riders in twilight on the shore ."
+      },
+      {
+        "test_position": 272,
+        "dataset_row": 6565,
+        "score": 0.25371772050857544,
+        "caption": "A boy in a blue shirt is mountain biking on a track and catching air ."
+      }
+    ]
+  },
+  {
+    "label": "failure",
+    "query_test_position": 0,
+    "query_dataset_row": 2116,
+    "caption": "A brown dog is running on the grass .",
+    "ground_truth_score": 0.28141576051712036,
+    "ground_truth_rank": 5,
+    "retrieved": [
+      {
+        "test_position": 1083,
+        "dataset_row": 1143,
+        "score": 0.29750141501426697,
+        "caption": "A brown dog is about to jump ."
+      },
+      {
+        "test_position": 837,
+        "dataset_row": 1961,
+        "score": 0.2924252152442932,
+        "caption": "A brown dog races through a field ."
+      },
+      {
+        "test_position": 694,
+        "dataset_row": 1751,
+        "score": 0.28312188386917114,
+        "caption": "A miniature dachshund has an apron on its back ."
+      }
+    ]
+  }
+]

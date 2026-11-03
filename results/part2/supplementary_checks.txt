@@ -1,0 +1,35 @@
+
+Inline plotting
+
+Cache and split verification
+PASS: split sizes, disjointness, feature shapes/finiteness and live vision-cache spot check; max error 0.0
+
+Result preservation
+Recording run timings and unmerged trainable-parameter checkpoints; training logic unchanged.
+
+Experiment record export
+Saved experiment records: 0 trained configurations
+
+Experiment record export
+Saved experiment records: 2 trained configurations
+
+Experiment record export
+Saved experiment records: 4 trained configurations
+
+Experiment record export
+Saved experiment records: 5 trained configurations
+
+Experiment record export
+Saved experiment records: 8 trained configurations
+
+Experiment record export
+Saved experiment records: 8 trained configurations
+
+Experiment record export
+Saved experiment records: 8 trained configurations
+
+Experiment record export
+Saved experiment records: 8 trained configurations
+
+Qualitative evidence export
+Saved success/failure captions, ranks and image files.
