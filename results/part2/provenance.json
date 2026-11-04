@@ -1,0 +1,50 @@
+{
+  "python": "3.12.16",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "device": "mps",
+  "packages": {
+    "torch": "2.14.1",
+    "transformers": "5.21.0",
+    "datasets": "5.1.0",
+    "numpy": "2.5.4",
+    "peft": "0.21.2",
+    "nbclient": "0.11.0"
+  },
+  "model": "openai/clip-vit-base-patch32",
+  "model_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "dataset_fingerprint": "65141adde6c935c6",
+  "dataset_cache_files": [
+    {
+      "filename": "/Users/bob/.cache/huggingface/datasets/Naveengo___flickr8k/default/0.0.0/bf0e4f0aa5f5451266c00b883f5979cd7cb491e8/flickr8k-train-00000-of-00003.arrow"
+    },
+    {
+      "filename": "/Users/bob/.cache/huggingface/datasets/Naveengo___flickr8k/default/0.0.0/bf0e4f0aa5f5451266c00b883f5979cd7cb491e8/flickr8k-train-00001-of-00003.arrow"
+    },
+    {
+      "filename": "/Users/bob/.cache/huggingface/datasets/Naveengo___flickr8k/default/0.0.0/bf0e4f0aa5f5451266c00b883f5979cd7cb491e8/flickr8k-train-00002-of-00003.arrow"
+    }
+  ],
+  "cache_sha256": {
+    "text_pooled.pt": "838c3bb3681e7b87a72ccb3a5a9d9feea2ba8ceeaacf77cdbc1a679932cf043a",
+    "vision_pooled.pt": "9d137f1c628d9765ff96755076cb1a25c6d6e5ebdcdb9c19694c576c67202fb2"
+  },
+  "split_sizes": {
+    "train": 6000,
+    "validation": 1000,
+    "test": 1091
+  },
+  "vision_cache_spotcheck_rows": [
+    0,
+    1000,
+    4000,
+    6000,
+    8090
+  ],
+  "vision_cache_max_absolute_error": 0.0,
+  "seed": 42,
+  "shuffle_note": "The provided DataLoader generator advances across runs; run order is preserved.",
+  "recorded_at": "2026-11-02T12:14:08.144746+08:00",
+  "source_commit": "ee1f94705af9dee55071e7d1bac36f9f6f3029c6",
+  "run_branch": "codex/part2-d-results",
+  "cached_text_validation": "Provided cell 21 checked cached text features against live encoder on 256 validation pairs (atol=1e-3)."
+}
