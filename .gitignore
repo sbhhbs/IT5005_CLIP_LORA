@@ -41,3 +41,10 @@ __pycache__/
 Thumbs.db
 .idea/
 .vscode/
+
+# Private submission script/config and generated upload materials
+/.submission-private/
+/submission/
+# Also protect named submission exports if copied elsewhere in this checkout
+group_*_part_[12].ipynb
+group_*_video.txt
